@@ -6,6 +6,66 @@
 
 @layer base {
   :root {
+    /* Professional Light Theme */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Professional Blue Primary */
+    --primary: 217 91% 60%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 217 91% 70%;
+
+    /* Professional Purple Secondary */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 217 91% 60%;
+
+    /* Professional Light Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(262 83% 58%));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%), hsl(210 40% 98%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 40% 98%), hsl(220 26% 96%));
+    
+    /* Professional Light Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(217 91% 60% / 0.15);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.08);
+    --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.1);
+
+    /* Animation Variables */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    --radius: 0.75rem;
+
+    /* Sidebar (keeping for compatibility) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222.2 84% 4.9%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  .dark {
     /* Professional Dark Theme */
     --background: 220 26% 6%;
     --foreground: 210 40% 98%;
@@ -38,55 +98,17 @@
     --input: 220 26% 12%;
     --ring: 217 91% 60%;
 
-    /* Professional Gradients */
+    /* Professional Dark Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(262 83% 58%));
     --gradient-card: linear-gradient(135deg, hsl(220 26% 8%), hsl(220 26% 10%));
     --gradient-hero: linear-gradient(135deg, hsl(220 26% 6%), hsl(220 26% 4%));
     
-    /* Professional Shadows */
+    /* Professional Dark Shadows */
     --shadow-elegant: 0 10px 30px -10px hsl(217 91% 60% / 0.3);
     --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.15);
     --shadow-glow: 0 0 40px hsl(217 91% 60% / 0.2);
 
-    /* Animation Variables */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-spring: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-    --radius: 0.75rem;
-
-    /* Sidebar (keeping for compatibility) */
-    --sidebar-background: 220 26% 8%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 217 91% 60%;
-    --sidebar-primary-foreground: 220 26% 6%;
-    --sidebar-accent: 220 26% 12%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 220 26% 12%;
-    --sidebar-ring: 217 91% 60%;
-  }
-
-  .dark {
-    /* Note: This portfolio uses a dark theme by default, but keeping this for potential future use */
-    --background: 220 26% 6%;
-    --foreground: 210 40% 98%;
-    --card: 220 26% 8%;
-    --card-foreground: 210 40% 98%;
-    --popover: 220 26% 8%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217 91% 60%;
-    --primary-foreground: 220 26% 6%;
-    --primary-glow: 217 91% 70%;
-    --secondary: 262 83% 58%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 220 26% 12%;
-    --muted-foreground: 215 20% 65%;
-    --accent: 262 83% 58%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 220 26% 12%;
-    --input: 220 26% 12%;
-    --ring: 217 91% 60%;
+    /* Sidebar */
     --sidebar-background: 220 26% 8%;
     --sidebar-foreground: 210 40% 98%;
     --sidebar-primary: 217 91% 60%;
