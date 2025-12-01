@@ -70,7 +70,7 @@ const Navigation = () => {
             className="font-bold text-lg sm:text-xl text-gradient cursor-pointer transition-all duration-300 hover:scale-105" 
             onClick={() => scrollToSection('home')}
           >
-            SBM
+            SYED BADESHAH
           </div>
 
           {/* Desktop Navigation */}

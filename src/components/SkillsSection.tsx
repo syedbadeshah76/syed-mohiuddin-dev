@@ -11,10 +11,8 @@ const SkillsSection = () => {
       skills: [
         { name: "React", level: 95 },
         { name: "JavaScript (ES6+)", level: 90 },
-        { name: "TypeScript", level: 85 },
         { name: "HTML5/CSS3", level: 95 },
-        { name: "Tailwind CSS", level: 90 },
-        { name: "Next.js", level: 80 }
+        { name: "Tailwind CSS", level: 60 }
       ]
     },
     {
@@ -24,8 +22,7 @@ const SkillsSection = () => {
         { name: "Express.js", level: 90 },
         { name: "MongoDB", level: 85 },
         { name: "REST APIs", level: 90 },
-        { name: "GraphQL", level: 75 },
-        { name: "JWT Authentication", level: 85 }
+        { name: "JWT Authentication", level: 55 }
       ]
     },
     {
@@ -33,10 +30,7 @@ const SkillsSection = () => {
       skills: [
         { name: "Git/GitHub", level: 90 },
         { name: "VS Code", level: 95 },
-        { name: "Postman", level: 85 },
-        { name: "Docker", level: 70 },
-        { name: "AWS", level: 65 },
-        { name: "Firebase", level: 80 }
+        { name: "Postman", level: 85 }
       ]
     }
   ];
@@ -104,7 +98,7 @@ const SkillsSection = () => {
         </div>
 
         {/* Additional Skills */}
-        <div className="mt-12 sm:mt-16 text-center">
+        {/* <div className="mt-12 sm:mt-16 text-center">
           <h3 className="text-xl sm:text-2xl font-semibold mb-6 sm:mb-8">Additional Expertise</h3>
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3 max-w-4xl mx-auto px-4">
             {additionalSkills.map((skill, index) => (
@@ -119,7 +113,7 @@ const SkillsSection = () => {
               </span>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

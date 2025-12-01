@@ -42,7 +42,7 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">Connect</h4>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/syedbadeshah"
+                href="https://github.com/syedbadeshah76"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-muted/50 border border-border hover:bg-muted hover:border-primary/50 hover:text-primary transition-all duration-300"
@@ -50,7 +50,7 @@ const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/in/syedbadeshah"
+                href="https://www.linkedin.com/in/syed-badeshah-mohiuddin-a30805367?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-muted/50 border border-border hover:bg-muted hover:border-primary/50 hover:text-primary transition-all duration-300"
@@ -58,7 +58,7 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="mailto:syed.badeshah@example.com"
+                href="mailto:badeshah786@gmail.com"
                 className="p-2 rounded-lg bg-muted/50 border border-border hover:bg-muted hover:border-primary/50 hover:text-primary transition-all duration-300"
               >
                 <Mail className="h-5 w-5" />
@@ -73,9 +73,7 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm mb-4 md:mb-0">
               © {currentYear} Syed Badeshah Mohiuddin. All rights reserved.
             </p>
-            <p className="text-muted-foreground text-sm flex items-center">
-              Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> using React & TypeScript
-            </p>
+          
           </div>
         </div>
       </div>
