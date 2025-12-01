@@ -33,10 +33,19 @@ const HeroSection = () => {
         <div className={`flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-8 sm:mb-12 px-4 transition-all duration-1000 delay-300 transform ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
-          <Button size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-3 text-base sm:text-lg font-medium hover-lift">
-            <Mail className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-            Get In Touch
-          </Button>
+         <Button
+  size="lg"
+  className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-primary-foreground px-6 sm:px-8 py-3 text-base sm:text-lg font-medium hover-lift"
+  onClick={() => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" }); // Smooth scrolling
+    }
+  }}
+>
+  Get In Touch
+</Button>
+
           <Button variant="outline" size="lg" className="w-full sm:w-auto border-border bg-card/50 backdrop-blur-sm hover:bg-card/80 px-6 sm:px-8 py-3 text-base sm:text-lg font-medium hover-lift">
             <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
             Download CV
@@ -48,7 +57,7 @@ const HeroSection = () => {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
           <a
-            href="https://github.com"
+            href="https://github.com/syedbadeshah76/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 sm:p-3 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:bg-card/80 hover-lift hover-glow transition-all duration-300"
@@ -56,7 +65,7 @@ const HeroSection = () => {
             <Github className="h-5 w-5 sm:h-6 sm:w-6" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/syed-badeshah-mohiuddin-a30805367?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 sm:p-3 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:bg-card/80 hover-lift hover-glow transition-all duration-300"
@@ -64,7 +73,7 @@ const HeroSection = () => {
             <Linkedin className="h-5 w-5 sm:h-6 sm:w-6" />
           </a>
           <a
-            href="mailto:contact@example.com"
+            href="mailto:badeshah786@gmail.com"
             className="p-2 sm:p-3 rounded-full bg-card/50 backdrop-blur-sm border border-border hover:bg-card/80 hover-lift hover-glow transition-all duration-300"
           >
             <Mail className="h-5 w-5 sm:h-6 sm:w-6" />

@@ -16,26 +16,26 @@ const ProjectsSection = () => {
       description: "A comprehensive educational platform built with React, featuring course management, student enrollment, and interactive learning modules. Designed with modern UI/UX principles for optimal learning experience.",
       image: knowledgeVillageImg,
       technologies: ["React", "JavaScript", "CSS3", "Responsive Design"],
-      githubUrl: "https://github.com/syedbadeshah",
-      liveUrl: "https://knowledge-village-demo.com",
+      githubUrl: "https://github.com/syedbadeshah76/knowledge-village-nexus",
+      liveUrl: "https://knowledge-village-institute.onrender.com/",
       featured: true
     },
     {
       title: "Gucci Perfume E-commerce",
-      description: "Luxury e-commerce platform showcasing Gucci perfume collection with elegant design, product filtering, shopping cart functionality, and secure checkout process.",
+      description: "Luxury e-commerce platform showcasing Gucci perfume collection with elegant design, product filtering, shopping cart functionality.",
       image: gucciPerfumeImg,
       technologies: ["React", "JavaScript", "CSS3", "E-commerce"],
-      githubUrl: "https://github.com/syedbadeshah",
-      liveUrl: "https://gucci-perfume-demo.com",
+      githubUrl: "https://github.com/syedbadeshah76/aroma-perfume/",
+      liveUrl: "https://syedbadeshah76.github.io/aroma-perfume/",
       featured: true
     },
     {
-      title: "JavaScript Projects Collection",
-      description: "A collection of three creative JavaScript applications: an advanced calculator with scientific functions, a weather dashboard with API integration, and a productivity-focused todo manager.",
+      title: "TECHLYNX ",
+      description: "Innovating the Future with Cutting Edge Technology",
       image: javascriptProjectsImg,
-      technologies: ["JavaScript", "HTML5", "CSS3", "APIs", "Local Storage"],
-      githubUrl: "https://github.com/syedbadeshah",
-      liveUrl: "https://js-projects-demo.com",
+      technologies: ["JavaScript", "HTML5", "CSS3", "JAVASCRIPT"],
+      githubUrl: "https://github.com/syedbadeshah76/techvex-project",
+      liveUrl: "https://syedbadeshah76.github.io/techvex-project/",
       featured: false
     }
   ];
@@ -77,11 +77,11 @@ const ProjectsSection = () => {
                       <div className="flex gap-2">
                         <Button size="sm" className="bg-primary hover:bg-primary/90 text-xs sm:text-sm">
                           <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-                          Demo
+                         <a href={project.liveUrl}> Demo</a>
                         </Button>
                         <Button size="sm" variant="outline" className="border-border bg-card/50 backdrop-blur-sm hover:bg-card/80 text-xs sm:text-sm">
                           <Github className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-                          Code
+                           <a href={project.githubUrl}>  Code </a>
                         </Button>
                       </div>
                     </div>
@@ -159,7 +159,7 @@ const ProjectsSection = () => {
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground hover-lift"
             asChild
           >
-            <a href="https://github.com/syedbadeshah" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/syedbadeshah76" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5 mr-2" />
               View All Projects on GitHub
             </a>
