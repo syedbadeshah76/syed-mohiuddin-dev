@@ -60,52 +60,34 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      scrolled 
-        ? 'glass shadow-lg border-b border-border/50' 
-        : 'bg-transparent'
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled ? 'bg-background/95 backdrop-blur-md border-b border-border shadow-lg' : 'bg-transparent'
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           {/* Logo */}
           <div 
-            className="font-bold text-lg sm:text-xl cursor-pointer transition-all duration-300 hover:scale-105 group" 
+            className="font-bold text-lg sm:text-xl text-gradient cursor-pointer transition-all duration-300 hover:scale-105" 
             onClick={() => scrollToSection('home')}
           >
-            <span className="font-display">
-              <span className="text-gradient-gold">SYED</span>{' '}
-              <span className="text-foreground group-hover:text-gold transition-colors">BADESHAH</span>
-            </span>
+            SBM
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
+          <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`relative px-4 py-2 rounded-lg font-medium transition-all duration-300 text-sm lg:text-base group ${
+                className={`px-3 lg:px-4 py-2 rounded-lg font-medium transition-all duration-300 text-sm lg:text-base ${
                   activeSection === item.id
-                    ? 'text-gold'
-                    : 'text-muted-foreground hover:text-foreground'
+                    ? 'text-primary bg-primary/10 border border-primary/20 scale-105'
+                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50 hover:scale-105'
                 }`}
               >
                 {item.label}
-                {/* Active indicator */}
-                <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-gold rounded-full transition-all duration-300 ${
-                  activeSection === item.id ? 'w-6' : 'w-0 group-hover:w-4'
-                }`} />
               </button>
             ))}
-            
-            {/* Hire Me Button */}
-            <Button 
-              onClick={() => scrollToSection('contact')}
-              className="ml-2 btn-gold px-6 hover-lift"
-            >
-              Hire Me
-            </Button>
-            
             <ThemeToggle />
           </div>
 
@@ -115,40 +97,34 @@ const Navigation = () => {
             <Button
               variant="ghost"
               size="sm"
-              className="p-2 hover:bg-gold/10"
+              className="p-2"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
-        <div className={`md:hidden overflow-hidden transition-all duration-300 ${
-          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-        }`}>
-          <div className="px-2 pt-2 pb-4 space-y-1 glass rounded-2xl mt-2 mb-4 border border-border/50">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className={`block w-full text-left px-4 py-3 rounded-xl font-medium transition-all duration-300 ${
-                  activeSection === item.id
-                    ? 'text-gold bg-gold/10 border border-gold/20'
-                    : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                }`}
-              >
-                {item.label}
-              </button>
-            ))}
-            <Button 
-              onClick={() => scrollToSection('contact')}
-              className="w-full mt-2 btn-gold"
-            >
-              Hire Me
-            </Button>
+        {isOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-card/95 backdrop-blur-md border-t border-border rounded-b-lg">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className={`block w-full text-left px-3 py-2 rounded-lg font-medium transition-all duration-300 ${
+                    activeSection === item.id
+                      ? 'text-primary bg-primary/10 border border-primary/20'
+                      : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                  }`}
+                >
+                  {item.label}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </nav>
   );

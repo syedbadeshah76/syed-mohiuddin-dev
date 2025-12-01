@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 import { useScrollAnimation, useStaggeredScrollAnimation } from '@/hooks/useScrollAnimation';
 import knowledgeVillageImg from '@/assets/knowledge-village-project.jpg';
-import gucciPerfumeImg from '@/assets/weddy.png';
+import gucciPerfumeImg from '@/assets/gucci-perfume-project.jpg';
 import javascriptProjectsImg from '@/assets/javascript-projects.jpg';
 
 const ProjectsSection = () => {
@@ -16,29 +16,28 @@ const ProjectsSection = () => {
       description: "A comprehensive educational platform built with React, featuring course management, student enrollment, and interactive learning modules. Designed with modern UI/UX principles for optimal learning experience.",
       image: knowledgeVillageImg,
       technologies: ["React", "JavaScript", "CSS3", "Responsive Design"],
-      githubUrl: "https://github.com/syedbadeshah76/knowledge-village-nexus",
-      liveUrl: "https://knowledge-village-institute.onrender.com/",
+      githubUrl: "https://github.com/syedbadeshah",
+      liveUrl: "https://knowledge-village-demo.com",
       featured: true
     },
     {
-      title: "Wedding Website for Syed & Afsana",
-      description: "Luxury Theme Wedding Website For Couples (Freelancing).",
+      title: "Gucci Perfume E-commerce",
+      description: "Luxury e-commerce platform showcasing Gucci perfume collection with elegant design, product filtering, shopping cart functionality, and secure checkout process.",
       image: gucciPerfumeImg,
       technologies: ["React", "JavaScript", "CSS3", "E-commerce"],
-      // githubUrl: "https://github.com/syedbadeshah76/aroma-perfume/",
-      liveUrl: "https://asif-ariba-wedding.netlify.app/",
+      githubUrl: "https://github.com/syedbadeshah",
+      liveUrl: "https://gucci-perfume-demo.com",
       featured: true
     },
     {
-      title: "TECHLYNX ",
-      description: "Innovating the Future with Cutting Edge Technology",
+      title: "JavaScript Projects Collection",
+      description: "A collection of three creative JavaScript applications: an advanced calculator with scientific functions, a weather dashboard with API integration, and a productivity-focused todo manager.",
       image: javascriptProjectsImg,
-      technologies: ["JavaScript", "HTML5", "CSS3", "JAVASCRIPT"],
-      githubUrl: "https://github.com/syedbadeshah76/techvex-project",
-      liveUrl: "https://syedbadeshah76.github.io/techvex-project/",
+      technologies: ["JavaScript", "HTML5", "CSS3", "APIs", "Local Storage"],
+      githubUrl: "https://github.com/syedbadeshah",
+      liveUrl: "https://js-projects-demo.com",
       featured: false
-    },
-    
+    }
   ];
 
   return (
@@ -78,11 +77,11 @@ const ProjectsSection = () => {
                       <div className="flex gap-2">
                         <Button size="sm" className="bg-primary hover:bg-primary/90 text-xs sm:text-sm">
                           <ExternalLink className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-                         <a href={project.liveUrl}> Demo</a>
+                          Demo
                         </Button>
                         <Button size="sm" variant="outline" className="border-border bg-card/50 backdrop-blur-sm hover:bg-card/80 text-xs sm:text-sm">
                           <Github className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-                           <a href={project.githubUrl}>  Code </a>
+                          Code
                         </Button>
                       </div>
                     </div>
@@ -160,7 +159,7 @@ const ProjectsSection = () => {
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground hover-lift"
             asChild
           >
-            <a href="https://github.com/syedbadeshah76" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/syedbadeshah" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5 mr-2" />
               View All Projects on GitHub
             </a>
