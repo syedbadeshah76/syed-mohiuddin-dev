@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { ExternalLink, Github } from 'lucide-react';
 import { useScrollAnimation, useStaggeredScrollAnimation } from '@/hooks/useScrollAnimation';
 import knowledgeVillageImg from '@/assets/knowledge-village-project.jpg';
-import gucciPerfumeImg from '@/assets/gucci-perfume-project.jpg';
+import gucciPerfumeImg from '@/assets/weddy.png';
 import javascriptProjectsImg from '@/assets/javascript-projects.jpg';
 
 const ProjectsSection = () => {
@@ -21,12 +21,12 @@ const ProjectsSection = () => {
       featured: true
     },
     {
-      title: "Gucci Perfume E-commerce",
-      description: "Luxury e-commerce platform showcasing Gucci perfume collection with elegant design, product filtering, shopping cart functionality.",
+      title: "Wedding Website for Syed & Afsana",
+      description: "Luxury Theme Wedding Website For Couples (Freelancing).",
       image: gucciPerfumeImg,
       technologies: ["React", "JavaScript", "CSS3", "E-commerce"],
-      githubUrl: "https://github.com/syedbadeshah76/aroma-perfume/",
-      liveUrl: "https://syedbadeshah76.github.io/aroma-perfume/",
+      // githubUrl: "https://github.com/syedbadeshah76/aroma-perfume/",
+      liveUrl: "https://asif-ariba-wedding.netlify.app/",
       featured: true
     },
     {
@@ -37,7 +37,8 @@ const ProjectsSection = () => {
       githubUrl: "https://github.com/syedbadeshah76/techvex-project",
       liveUrl: "https://syedbadeshah76.github.io/techvex-project/",
       featured: false
-    }
+    },
+    
   ];
 
   return (
